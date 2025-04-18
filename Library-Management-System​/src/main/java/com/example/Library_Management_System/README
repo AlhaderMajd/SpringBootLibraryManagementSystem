@@ -1,0 +1,112 @@
+# Library Management System
+
+A Spring Boot application with JWT authentication for managing books and users in a library system.
+
+## Features
+
+- **User Authentication**: Secure JWT-based authentication system
+- **Role-Based Access Control**: Different permissions for ADMIN, AUTHOR, and MEMBER roles
+- **Book Management**: CRUD operations for books
+- **User Management**: User registration and management
+- **Database Integration**: MySQL database with JPA/Hibernate
+
+## Technologies
+
+- **Backend**: Spring Boot 3.x
+- **Security**: Spring Security with JWT
+- **Database**: MySQL
+- **ORM**: Spring Data JPA
+- **Build Tool**: Maven
+
+## Installation
+
+### Prerequisites
+
+- Java 17+
+- MySQL 8.0+
+- Maven 3.8+
+
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/library-management-system.git
+   cd library-management-system
+   ```
+
+2. Configure the database:
+   - Create a MySQL database named `library_db`
+   - Update `application.properties` with your database credentials:
+     ```
+     spring.datasource.url=jdbc:mysql://localhost:3306/library_db
+     spring.datasource.username=yourusername
+     spring.datasource.password=yourpassword
+     ```
+
+3. Build and run the application:
+   ```bash
+   mvn clean install
+   mvn spring-boot:run
+   ```
+
+## API Documentation
+
+### Authentication
+
+- **POST /api/auth/login** - Authenticate and get JWT token
+  ```json
+  {
+    "username": "admin",
+    "password": "admin123"
+  }
+  ```
+
+### Books
+
+- **GET /api/books** - Get all books (public)
+- **GET /api/books/{id}** - Get book by ID (public)
+- **POST /api/books** - Create new book (AUTHOR role required)
+- **PUT /api/books/{id}** - Update book (AUTHOR role required)
+- **DELETE /api/books/{id}** - Delete book (ADMIN role required)
+
+### Users
+
+- **GET /api/users** - Get all users (ADMIN role required)
+- **GET /api/users/{id}** - Get user by ID (ADMIN/AUTHOR/MEMBER for own profile)
+- **POST /api/users** - Register new user
+- **PUT /api/users/{id}** - Update user (ADMIN or own profile)
+- **DELETE /api/users/{id}** - Delete user (ADMIN role required)
+
+## Default Users
+
+The system creates these default users on startup:
+
+| Username    | Password    | Role  |
+|-------------|-------------|-------|
+| admin       | admin123    | ADMIN |
+| author      | author123   | AUTHOR|
+| member      | member123   | MEMBER|
+
+## Security Configuration
+
+The system uses JWT tokens for authentication. Include the token in requests using the Authorization header:
+
+```
+Authorization: Bearer your.jwt.token.here
+```
+
+## Development
+
+### Running Tests
+
+```bash
+mvn test
+```
+
+### Code Style
+
+The project follows Google Java Style Guide. Use the provided formatter:
+
+```bash
+mvn spotless:apply
+```
