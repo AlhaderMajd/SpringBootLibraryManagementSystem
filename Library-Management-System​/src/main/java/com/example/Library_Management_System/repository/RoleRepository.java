@@ -1,4 +1,4 @@
-package com.example.Library_Management_System.dao;
+package com.example.Library_Management_System.repository;
 
 import com.example.Library_Management_System.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;

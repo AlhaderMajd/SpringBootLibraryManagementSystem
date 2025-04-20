@@ -1,6 +1,6 @@
 package com.example.Library_Management_System.service;
 
-import com.example.Library_Management_System.dao.UserRepository;
+import com.example.Library_Management_System.repository.UserRepository;
 import com.example.Library_Management_System.entity.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,4 +1,4 @@
-package com.example.Library_Management_System.rest;
+package com.example.Library_Management_System.controller;
 
 import com.example.Library_Management_System.entity.Book;
 import com.example.Library_Management_System.entity.User;

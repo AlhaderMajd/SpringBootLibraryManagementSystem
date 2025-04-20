@@ -1,7 +1,7 @@
 package com.example.Library_Management_System.security;
 
-import com.example.Library_Management_System.dao.RoleRepository;
-import com.example.Library_Management_System.dao.UserRepository;
+import com.example.Library_Management_System.repository.RoleRepository;
+import com.example.Library_Management_System.repository.UserRepository;
 import com.example.Library_Management_System.entity.Role;
 import com.example.Library_Management_System.entity.User;
 import org.slf4j.Logger;
