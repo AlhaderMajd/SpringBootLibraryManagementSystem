@@ -1,6 +1,6 @@
 package com.example.Library_Management_System.controller;
 
-import com.example.Library_Management_System.entity.User;
+import com.example.Library_Management_System.model.entity.User;
 import com.example.Library_Management_System.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

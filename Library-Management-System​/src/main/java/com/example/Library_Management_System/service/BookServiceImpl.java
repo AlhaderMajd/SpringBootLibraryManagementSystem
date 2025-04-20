@@ -1,8 +1,8 @@
 package com.example.Library_Management_System.service;
 
 import com.example.Library_Management_System.repository.BookRepository;
-import com.example.Library_Management_System.entity.Book;
-import com.example.Library_Management_System.entity.User;
+import com.example.Library_Management_System.model.entity.Book;
+import com.example.Library_Management_System.model.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

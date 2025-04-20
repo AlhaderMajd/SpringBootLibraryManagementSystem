@@ -1,4 +1,4 @@
-package com.example.Library_Management_System.dto;
+package com.example.Library_Management_System.model.dto;
 
 public class AuthResponse {
     private String token;

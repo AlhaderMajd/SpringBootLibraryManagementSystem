@@ -1,4 +1,4 @@
-package com.example.Library_Management_System.dto;
+package com.example.Library_Management_System.model.dto;
 
 public class AuthRequest {
     private String username;

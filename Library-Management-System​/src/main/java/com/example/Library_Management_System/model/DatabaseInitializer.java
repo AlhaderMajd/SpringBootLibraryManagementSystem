@@ -1,9 +1,9 @@
-package com.example.Library_Management_System.security;
+package com.example.Library_Management_System.model;
 
 import com.example.Library_Management_System.repository.RoleRepository;
 import com.example.Library_Management_System.repository.UserRepository;
-import com.example.Library_Management_System.entity.Role;
-import com.example.Library_Management_System.entity.User;
+import com.example.Library_Management_System.model.entity.Role;
+import com.example.Library_Management_System.model.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

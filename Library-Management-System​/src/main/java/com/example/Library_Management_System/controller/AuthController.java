@@ -1,7 +1,7 @@
 package com.example.Library_Management_System.controller;
 
-import com.example.Library_Management_System.dto.AuthRequest;
-import com.example.Library_Management_System.dto.AuthResponse;
+import com.example.Library_Management_System.model.dto.AuthRequest;
+import com.example.Library_Management_System.model.dto.AuthResponse;
 import com.example.Library_Management_System.security.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

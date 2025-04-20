@@ -1,7 +1,7 @@
 package com.example.Library_Management_System.service;
 
 import com.example.Library_Management_System.repository.UserRepository;
-import com.example.Library_Management_System.entity.User;
+import com.example.Library_Management_System.model.entity.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

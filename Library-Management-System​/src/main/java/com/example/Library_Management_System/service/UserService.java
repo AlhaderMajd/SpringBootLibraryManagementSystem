@@ -1,6 +1,6 @@
 package com.example.Library_Management_System.service;
 
-import com.example.Library_Management_System.entity.User;
+import com.example.Library_Management_System.model.entity.User;
 import java.util.List;
 
 public interface UserService {
